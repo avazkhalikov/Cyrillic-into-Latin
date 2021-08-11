@@ -1,0 +1,22 @@
+﻿<Window x:Class="WIUTCyrLatTranslator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WIUTCyrLatTranslator"
+        mc:Ignorable="d"
+        Title="Cyrillic to Latin Converter" Height="1060.904" Width="800">
+    <Grid Margin="0,0,0,102">
+        <DocumentViewer HorizontalAlignment="Left" Margin="0,42,0,0" 
+                        Name="documentViewer1" VerticalAlignment="Top" Height="400" Width="766" />
+        <TextBox Height="29" HorizontalAlignment="Left" Margin="6,6,0,0" 
+                 Name="SelectedFileTextBox" VerticalAlignment="Top" Width="276" />
+        <Button Content="Browse" Height="30" HorizontalAlignment="Right" Margin="0,5,383,0" 
+                Name="BrowseButton" VerticalAlignment="Top" Width="122" Click="BrowseButton_Click" RenderTransformOrigin="1.059,0.79" />
+        <Label Content="hcoder@gmail.com" HorizontalAlignment="Left" Margin="244,42,0,0" VerticalAlignment="Top" Width="259" Height="26"/>
+        <Button Content="Convert(Cyr->Lat)" Name="Cyrillic" HorizontalAlignment="Left" Margin="474,5,0,0" VerticalAlignment="Top" Width="129" Height="31" RenderTransformOrigin="0.201,-0.005" Click="Convert_Click"/>
+        <ProgressBar Visibility="Hidden" Name="pbStatus" HorizontalAlignment="Left" Height="15" Margin="538,53,0,0" VerticalAlignment="Top" Width="177" RenderTransformOrigin="0.46,0.688" IsIndeterminate="True"/>
+        <Button Content="Convert(Lat->Cyr)" Name="Latin" HorizontalAlignment="Left" Margin="629,6,0,0" VerticalAlignment="Top" Width="137" Height="30" Click="Convert_Click"/>
+        <DocumentViewer Name="documentViewer2" HorizontalAlignment="Left" Height="400" Width="766" Margin="-4,505,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
