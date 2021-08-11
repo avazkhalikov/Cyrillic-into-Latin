@@ -1,4 +1,4 @@
-# Cyrillic-into-Latin
+# Cyrillic-into-Latin or Latin into Cyrillic ...
 Cyrillic into Latin, Lating into Cyrillic file converter, Лотинча Кирилча, Kiril Lotincha text converter
 
 
